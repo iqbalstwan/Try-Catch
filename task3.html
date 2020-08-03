@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-3</title>
+</head>
+<body>
+    <script>
+        fetch('https://jsonplaceholder.typicode.com/users')
+        .then(response => response.json())
+        .then (data=>data.map(value => {
+            console.log(value.name)
+        }))
+
+        // const api_url = 'https://jsonplaceholder.typicode.com/users'
+        // async function getName(){
+        //     const response = await fetch(api_url);
+        //     const data = await response.json();
+        //     data.map(value => {
+        //         console.log(value.name)
+        //     })
+        // }
+        // getName()
+
+    </script>
+    
+</body>
+</html>
